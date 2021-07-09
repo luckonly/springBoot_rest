@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  app1:
+    container_name: app1
+    image: 'myapp:1'
+    environment:
+      TEST_ENV: "Hello1"
+    ports:
+    - 8080
+
+  app2:
+    container_name: app2
+    image: 'myapp:1'
+    environment:
+      TEST_ENV: "Hello2"
+    ports:
+      - 8081
+

@@ -1,0 +1,12 @@
+GET http://localhost:8081/authorize/?user=&password=password1
+Accept: application/json
+
+###
+POST http://localhost:8081/authorize/
+Content-Type: application/json
+
+{
+  "user" : "aa",
+  "password" : "asd222f123"
+}
+###
